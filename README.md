@@ -1,11 +1,11 @@
+# sudoku
+ 
   In this Project, the sudoku board generator is attached to the AWS API endpoint. When the API gateway receives a GET request, a response is returned with the generated board. 
 The AWS amplify handles the deployment of both the frontend and the backend. The sudoku board generator by using python. The fullboard function in the board class will first 
 generate a random solved sudoku board. The makepuzzle function in the board class will take the solved board and randomly pick numbers from a selected range in each row. Then it 
 will return the unsolved board.  The SudukoSolver function uses recursion to check the generated puzzle to see if it has a unique solution. If the puzzle has a unique solution, 
 it will return both solved and unsolved boards to the API. Otherwise, it will keep generating puzzles until it finds one with a unique solution. The front end was made using 
 react. Material-UI library was used to make the layout of the website. Axios and mobx are used to make the API call and to distribute the correct data to the components.
-
-
 
 # Getting Started with Create React App
 
@@ -53,5 +53,5 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-# sudoku
+
 
